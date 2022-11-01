@@ -7,7 +7,7 @@ from django.views import generic
 # classbased view 
 class KadasterIndexView(generic.TemplateView):
 	"""
-    Website Kadaster index page.
+    Kadaster index page.
 
     **Template:**
 
