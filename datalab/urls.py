@@ -12,6 +12,7 @@ urlpatterns = [
   path('', include('site_basis.urls'      , namespace="site-basis")),
   path('', include('kadaster.urls'        , namespace="kadaster")),
   path('', include('handelsregister.urls' , namespace="handelsregister")),
+  path('', include('datasets.urls'        , namespace="datasets")),
    # debug urls
   path("__debug__", include('debug_toolbar.urls')),
 ]

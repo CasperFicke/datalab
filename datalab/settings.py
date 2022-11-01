@@ -33,7 +33,9 @@ INSTALLED_APPS = [
   'site_basis.apps.SiteBasisConfig',
   'kadaster.apps.KadasterConfig',
   'handelsregister.apps.HandelsregisterConfig',
+  'datasets.apps.DatasetsConfig',
   # support packages
+  'django_extensions',
 ]
 
 MIDDLEWARE = [
