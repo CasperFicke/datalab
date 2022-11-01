@@ -9,5 +9,5 @@ from . import views
 app_name = "handelsregister"
 
 urlpatterns = [
-	path("", views.HandelsregisterIndexView.as_view(), name="handelsregister-index"),
+	path('handelsregister/', views.HandelsregisterIndexView.as_view(), name="handelsregister-index"),
 ]

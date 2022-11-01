@@ -17,6 +17,10 @@
     {% block extend_head %}
       <!-- This allows us to extend the head scripts in HTML docs that have special requirements -->
     {% endblock extend_head%}
+    <!-- Title -->
+    <title>CFi | {% block title %}Oefen applicatie{% endblock title %}</title>
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
   </head>
   <body>
     <!-- Navbar -->

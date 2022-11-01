@@ -9,5 +9,5 @@ from . import views
 app_name = "datasets"
 
 urlpatterns = [
-	path("", views.DatasetsIndexView.as_view(), name="datasets-index"),
+	path('datasets/', views.DatasetsIndexView.as_view(), name="datasets-index"),
 ]

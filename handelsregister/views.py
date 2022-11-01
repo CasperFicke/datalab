@@ -1,5 +1,6 @@
 # handelsregister/views.py
 
+# django
 from django.shortcuts import render
 from django.views import generic
 
@@ -14,5 +15,8 @@ class HandelsregisterIndexView(generic.TemplateView):
     :template:`handelsregister/handelsregister_index.html`
     """
 	template_name = "handelsregister/handelsregister_index.html"
-
-
+  
+	def get_context_data(self, **kwargs):
+		context = super().get_context_data(**kwargs)
+		context["title"]    = 'handelsregister-index'
+		return context
